@@ -1,0 +1,274 @@
+
+class POINTER(IIronCADApp)(comtypes.gen._3DE03008_922D_11CF_AC2E_00A024581E5C_0_27_0.IIronCADApp, POINTER(IDispatch))
+ |  Method resolution order:
+ |      POINTER(IIronCADApp)
+ |      comtypes.gen._3DE03008_922D_11CF_AC2E_00A024581E5C_0_27_0.IIronCADApp
+ |      POINTER(IDispatch)
+ |      comtypes.automation.IDispatch
+ |      POINTER(IUnknown)
+ |      IUnknown
+ |      _compointer_base
+ |      ctypes.c_void_p
+ |      _ctypes._SimpleCData
+ |      _ctypes._CData
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  __getattr__(self, name) from comtypes._post_coinit._cominterface_meta_patcher.case_insensitive.<locals>.CaseInsensitive
+ |      Implement case insensitive access to methods and properties
+ |
+ |  __setattr__(self, name, value) from comtypes._post_coinit._cominterface_meta_patcher.case_insensitive.<locals>.CaseInsensitive
+ |      Implement case insensitive access to methods and properties
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  __com_interface__ = <class 'comtypes.gen._3DE03008_922D_11CF_AC2E_00A0...
+ |      IronCAD Application Interface
+ |
+ |
+ |  ----------------------------------------------------------------------
+ |  Readonly properties inherited from comtypes.gen._3DE03008_922D_11CF_AC2E_00A024581E5C_0_27_0.IIronCADApp:
+ |
+ |  ActiveCatalog
+ |      Returns the current catalog in an instance of the Application. Read only.
+ |
+ |  ActivePage
+ |      Returns the current page in an instance of the Application. Read only.
+ |
+ |  ActiveSheet
+ |      Returns the current active sheet in an instance of the Application. Read only.
+ |
+ |  AddOns
+ |      Returns the collection of AddOn objects. Read only.
+ |
+ |  Application
+ |      Returns the instance of the Application that created this object. Read only.
+ |
+ |  Catalogs
+ |      Returns the collection of catalogs in an instance of the Application. Read only.
+ |
+ |  ExportSetup
+ |      Returns ExportSetup object which contains all the information about export settings. Read only.
+ |
+ |  FullHelpName
+ |      Returns the full path name to the application help file. Read only.
+ |
+ |  HWnd
+ |      Returns the hWnd for the main window.
+ |
+ |  ImportSetup
+ |      Returns ImportSetup object which contains all the information about import settings. Read only.
+ |
+ |  ModelBooks
+ |      Returns the collection of Modelbooks in an instance of the Application. Read only.
+ |
+ |  Pages
+ |      Returns the collection of Pages in an instance of the Application. Read only.
+ |
+ |  QAStateMgr
+ |      QA State Manager- For internal use
+ |
+ |  Value
+ |      Returns the name of the Application. Read only, default property.
+ |
+ |  Version
+ |      Returns the Version of the Application. Read only.
+ |
+ |  ZIronCADApp
+ |      Get new ZIronCADApp interface
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from comtypes.gen._3DE03008_922D_11CF_AC2E_00A024581E5C_0_27_0.IIronCADApp:
+ |
+ |  Automation
+ |      Returns or sets the flag to indicate IronCAD was started in Automation mode.  If True, all IronCAD Dialogs and MessageBoxes will be hidden and return ID_ABORT by default.
+ |
+ |  DialogPrecision
+ |      Returns or sets the number of decimal places used for dialog precision.
+ |
+ |  DimensionPrecision
+ |      Returns or sets the number of decimal places used for dimension precision.
+ |
+ |  EnableServerBusyDialog
+ |      Sets flag to enable/disable wait dialog.
+ |
+ |  ImageFileDirectories
+ |      Returns or sets the directory that contains image files.
+ |
+ |  OpenSaveFolder
+ |      Set / get the default folder for opening and saving files.
+ |
+ |  SaveBoundaryRepresentation
+ |      Returns or sets the flag to save full boundary representation with the model in a Page.
+ |
+ |  SaveFacets
+ |      Returns or sets the flag to save facet representation with the model in a Page.
+ |
+ |  Server
+ |      This functionality has not been implemented yet.
+ |
+ |  TemplateFolder
+ |      Set / get the template folder.
+ |
+ |  Units
+ |      Returns or sets the units of measurement in an instance of the application.
+ |
+ |  Visible
+ |      Returns or sets the flag that controls visibility of the Application.
+ |
+ |  WindowHeight
+ |      Returns or sets the height of the main window.
+ |
+ |  WindowLeft
+ |      Returns or sets the position of the main window.
+ |
+ |  WindowStyle
+ |      Set / get the main window's style.
+ |
+ |  WindowTitle
+ |      Set / get the title for the main window.
+ |
+ |  WindowTop
+ |      Returns or sets the position of the main window.
+ |
+ |  WindowWidth
+ |      Returns or sets the width of the main window.
+ |
+ |  WorkingFolder
+ |      Set / get the working folder.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from comtypes.gen._3DE03008_922D_11CF_AC2E_00A024581E5C_0_27_0.IIronCADApp:
+ |
+ |  CreateAddOn = <COM method offset 39: WinFunctionType>
+ |      Create an Add-On Component.  Only used to create Add-Ons in catalog.
+ |
+ |
+ |  CreateAnimationSegment = <COM method offset 25: WinFunctionType>
+ |      Create an animation segment (usually of type triTrackGroup).
+ |
+ |
+ |  CreateBOMMasterNode = <COM method offset 48: WinFunctionType>
+ |      Create a new CBOMMasterNode instance.
+ |
+ |
+ |  CreateDragAndDropHook = <COM method offset 47: WinFunctionType>
+ |      Create a new Drag and Drop hook for external objects.
+ |
+ |
+ |  CreateSurfaceFinish = <COM method offset 24: WinFunctionType>
+ |      Creates a new SurfaceFinish object and returns its pointer.
+ |
+ |
+ |  InvokeObject = <COM method offset 44: WinFunctionType>
+ |      Invoke a method in another object.
+ |
+ |
+ |  Quit = <COM method offset 23: WinFunctionType>
+ |      Close an instance of the Application.
+ |
+ |
+ |  __map_case__ = {'_get_activecatalog': '_get_ActiveCatalog', '_get_acti...
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from POINTER(IDispatch):
+ |
+ |  __ctypes_from_outparam__ = wrap_outparam(punk: Any) -> Any from comtypes.client._managing
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from comtypes.automation.IDispatch:
+ |
+ |  GetIDsOfNames(self, *names: str, **kw: Any) -> List[int]
+ |      Map string names to integer ids.
+ |
+ |  GetTypeInfo(self, index: int, lcid: int = 0) -> 'hints.ITypeInfo'
+ |      Return type information.  Index 0 specifies typeinfo for IDispatch
+ |
+ |  Invoke(self, dispid: int, *args: Any, **kw: Any) -> Any
+ |      Invoke a method or property.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes inherited from comtypes.automation.IDispatch:
+ |
+ |  GetTypeInfoCount = <COM method offset 3: WinFunctionType>
+ |
+ |  __annotations__ = {'_disp_methods_': typing.ClassVar[typing.List[Forwa...
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from IUnknown:
+ |
+ |  AddRef(self) -> int
+ |      Increase the internal refcount by one and return it.
+ |
+ |  QueryInterface(self, interface: Type[~_T_IUnknown], iid: Optional[comtypes.GUID.GUID] = None) -> ~_T_IUnknown
+ |      QueryInterface(interface) -> instance
+ |
+ |  Release(self) -> int
+ |      Decrease the internal refcount by one and return it.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from IUnknown:
+ |
+ |  __dict__
+ |      dictionary for instance variables
+ |
+ |  __weakref__
+ |      list of weak references to the object
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from _compointer_base:
+ |
+ |  __del__(self, _debug=<bound method Logger.debug of <Logger comtypes._post_coinit.unknwn (WARNING)>>)
+ |      Release the COM refcount we own.
+ |
+ |  __eq__(self, other)
+ |      Return self==value.
+ |
+ |  __hash__(self)
+ |      Return the hash value of the pointer.
+ |
+ |  __repr__(self)
+ |      Return repr(self).
+ |
+ |  ----------------------------------------------------------------------
+ |  Class methods inherited from _compointer_base:
+ |
+ |  from_param(value)
+ |      Convert 'value' into a COM pointer to the interface.
+ |
+ |      This method accepts a COM pointer, or a CoClass instance
+ |      which is QueryInterface()d.
+ |
+ |  ----------------------------------------------------------------------
+ |  Readonly properties inherited from _compointer_base:
+ |
+ |  value
+ |      Return self.
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from _ctypes._SimpleCData:
+ |
+ |  __bool__(self, /)
+ |      True if self else False
+ |
+ |  __buffer__(self, flags, /)
+ |      Return a buffer object that exposes the underlying memory of the object.
+ |
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |
+ |  ----------------------------------------------------------------------
+ |  Static methods inherited from _ctypes._SimpleCData:
+ |
+ |  __new__(*args, **kwargs) class method of _ctypes._SimpleCData
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from _ctypes._CData:
+ |
+ |  __reduce__(...)
+ |      Helper for pickle.
+ |
+ |  __setstate__(...)
