@@ -35,6 +35,11 @@ class IronCAD(ComWrapper):
         if self.comobject == None:
             return None
         return self.comobject.ZIronCADApp.QueryInterface(ApiBase.IZBaseApp)
+    
+    def get_ironcadapp(self):
+        if self.comobject == None:
+            return None
+        return self.comobject
 
 
     
