@@ -1,15 +1,8 @@
 import comtypes 
 import comtypes.client
-import importlib
-import os
-
-import inspect
-from comtypes import IUnknown
 
 comtypes.client.GetModule("C:\\Program Files\\IronCAD\\2026\\bin\\ICApiIronCAD.tlb")
-comtypes.client.GetModule("C:\\Program Files\\IronCAD\\2026\\bin\\IronCad.tlb")
-import comtypes.gen.ICAPIIRONCADLib as ApiBase
-import comtypes.gen.IronCAD as IronCADLib
+import comtypes.gen.ICAPIIRONCADLib as ICAPI
 
 
 class ComWrapper:
@@ -23,19 +16,18 @@ class ComWrapper:
 class IronCAD(ComWrapper):
     def __init__(self):
         self.comobject = None
-        # self.application.Visible = True
 
     def attach(self):
         self.comobject = comtypes.client.GetActiveObject("IronCAD.Application")
 
-    def launch(self):
-        self.comobject = comtypes.client.CreateObject("IronCAD.Application")
+    def launch(self, machine=None):
+        self.comobject = comtypes.client.CreateObject("IronCAD.Application", machine=machine)
 
     def get_baseapp(self):
         if self.comobject == None:
             return None
-        return self.comobject.ZIronCADApp.QueryInterface(ApiBase.IZBaseApp)
-    
+        return self.comobject.ZIronCADApp.QueryInterface(ICAPI.IZBaseApp)
+
     def get_ironcadapp(self):
         if self.comobject == None:
             return None
@@ -50,7 +42,7 @@ if __name__ == "__main__":
 
     ironcad = IronCAD()
 
-    ironcad.attach()
+    ironcad.launch()
     
     baseapp = ironcad.get_baseapp()
 
