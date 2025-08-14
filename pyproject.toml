@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-ironcad"
+version = "0.1.0"
+description = "A Python module for IronCAD integration"
+authors = [
+    { name="Nathan Vrieland", email="nvrieland@ironcad.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "comtypes>=1.4.11"
+]
+
+[tool.setuptools]
+packages = ["python_ironcad"]

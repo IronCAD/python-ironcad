@@ -1,9 +1,18 @@
 import comtypes 
 import comtypes.client
 
-comtypes.client.GetModule("C:\\Program Files\\IronCAD\\2026\\bin\\ICApiIronCAD.tlb")
+IRONCAD_VERSION = 2026
+
+for i in range(IRONCAD_VERSION, 2019, -1):
+    try:
+        comtypes.client.GetModule(f"C:\\Program Files\\IronCAD\\{i}\\bin\\ICApiIronCAD.tlb")
+        break
+    except OSError:
+        continue
+
 import comtypes.gen.ICAPIIRONCADLib as ICAPI
 
+print(f"Using IRONCAD version: {IRONCAD_VERSION}")
 
 class ComWrapper:
     def __init__(self, comobject):
@@ -32,20 +41,5 @@ class IronCAD(ComWrapper):
         if self.comobject == None:
             return None
         return self.comobject
-
-
-    
-
-
-if __name__ == "__main__":
-
-
-    ironcad = IronCAD()
-
-    ironcad.launch()
-    
-    baseapp = ironcad.get_baseapp()
-
-    print(baseapp)
 
 

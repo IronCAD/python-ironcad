@@ -1,8 +1,0 @@
-Please start a cmd window as admin and register these following dlls in the same order (IronCADInstallPath is IronCAD installation path).
- 
-IronCADInstallPath = C:/program files/ironcad/2026/bin
-
-Regsvr32 "IronCADInstallPath\bin\3iICApiIronCADApp.dll"
-Regsvr32 "IronCADInstallPath\bin\3iICApiDrawing.dll"
-Regsvr32 "IronCADInstallPath\bin\3iICApiCore.dll"
-Regsvr32 "IronCADInstallPath\bin\3iICApiBase.dll"
