@@ -87,4 +87,4 @@ element = selected_entry.InsertElement()
 ## intellisense in Visual Studio Code
 if you want to use intellisense to see object members, you can use python type hints 
 
-![Intellisense](https://via.placeholder.com/150)
+![Intellisense](docs/images/intellisense.png)
