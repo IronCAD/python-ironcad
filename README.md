@@ -33,55 +33,15 @@ if you want to attach to currently running IRONCAD process
 ```python
 IRONCAD.attach()
 IZBaseApp = IRONCAD.GetIZBaseApp()
-IZDoc = IZBaseApp.ActiveDoc
+IZDoc = IZBaseApp.ActiveDoc # get currently open document
 ```
 if you want to launch new IRONCAD process
 ```python
 IRONCAD.launch()
 IZBaseApp = IRONCAD.GetIZBaseApp()
-IZDoc = newdoc = IZBaseApp.CreateNewDoc(1, 0, 1, "", 1)
+IZDoc = IZBaseApp.CreateNewDoc(1, 0, 1, "", 1) # create a new document
 ```
-
-### get catalogs and entries
-```python
-# get catalog manager
-CatalogMgr = IZBaseApp.CatalogMgr
-
-# create list containing all catalog interfaces
-catalogs = [CatalogMgr.Catalog(x) for x in range(CatalogMgr.Count)]
-
-# print number of catalogs
-print(f"{len(catalogs)} catalogs found")
-
-for catalog in catalogs:
-    print(f"\tCatalog: {catalog.Name}")
-```
-
-you can select a specific catalog by name
-```python 
-selected_catalog = None
-selected_name = "Shapes"
-
-for catalog in catalogs:
-    if catalog.Name == selected_name:
-        selected_catalog = catalog
-        break
-```
-
-get a specific catalog entry
-```python 
-entries = [Selected_catalog.Entry(x) for x in range(Selected_catalog.EntryCount)]
-selected_entry_name = "Slot"
-selected_entry = None
-for entry in entries:
-    print(f"\tEntry: {entry.Name}")
-    selected_entry = entry
-```
-
-drop to scene and get IZElement
-```python
-element = selected_entry.InsertElement()
-```
+Please refer to [samples](https://github.com/IronCAD/python-ironcad/tree/main/samples) for more in-depth examples
 
 # tips
 ### help() function to find member methods and data
