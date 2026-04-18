@@ -84,7 +84,12 @@ element = selected_entry.InsertElement()
 ```
 
 # tips
-## intellisense in Visual Studio Code
+### help() function to find member methods and data
+to inspect all members of a given object, use help(object)
+![help function](docs/images/help.png)
+
+### intellisense in Visual Studio Code
 if you want to use intellisense to see object members, you can use python type hints 
 
 ![Intellisense](docs/images/intellisense.png)
+
