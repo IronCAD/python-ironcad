@@ -14,7 +14,7 @@ pip install python-ironcad
 
 In order for python to access the IRONCAD API, dll's from IRONCAD's install need to be registered system-wide. to do this, simply run the setup script:
 ```powershell
-python -m python-ironcad
+python -m python_ironcad
 ```
 
 ## Quick Start
