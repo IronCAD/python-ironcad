@@ -4,7 +4,7 @@
     <img src="https://www.ironcad.com/wp-content/uploads/2016/05/product_icon_ironcad.png" alt="IronCAD Logo">
 </p>
 
-A Python module for IronCAD automation and scripting.
+A Python module for IronCAD automation and scripting. This package exposes IRONCAD's entire API to python.
 
 ## Installation
 
@@ -89,7 +89,11 @@ to inspect all members of a given object, use help(object)
 ![help function](docs/images/help.png)
 
 ### intellisense in Visual Studio Code
-if you want to use intellisense to see object members, you can use python type hints 
+if you want to use intellisense to see object members, you can use python type hints. (this also works in pycharm)
 
 ![Intellisense](docs/images/intellisense.png)
 
+# known issues
+- INOVATE is currently not supported 
+- Some methods that use VARIANT type don't work 
+- currently only targets the most recent installed version of IRONCAD
