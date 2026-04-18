@@ -82,3 +82,9 @@ drop to scene and get IZElement
 ```python
 element = selected_entry.InsertElement()
 ```
+
+# tips
+## intellisense in Visual Studio Code
+if you want to use intellisense to see object members, you can use python type hints 
+
+![Intellisense](https://via.placeholder.com/150)
