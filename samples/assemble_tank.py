@@ -44,7 +44,7 @@ lid = next((ent for ent in entries if ent.Name == entryname), None)
 middle_screen = (0, 0) 
 
 # start building
-elem_shell = Shell.InsertElement()\
+elem_shell = Shell.InsertElement()
 
 # here we can see the connectors on the shell and get their ID's
 for i in range(elem_shell.QueryInterface(ICAPI.IZConnectorMgr).GetConnectorsCount()):
