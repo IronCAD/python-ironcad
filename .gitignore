@@ -24,6 +24,7 @@ var/
 *.egg
 MANIFEST
 python_ironcad.egg-info/
+python_ironcad.egg-info
 
 # Installer logs
 pip-log.txt
