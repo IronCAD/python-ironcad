@@ -1,3 +1,11 @@
+# This file is a modified version of comtypes/tools/tlbparser.py
+# Original project: comtypes (https://github.com/enthought/comtypes)
+# Copyright (c) 2005-2023 Thomas Heller and contributors
+# Copyright (c) 2014, Comtypes Developers.
+# Licensed under the OSI Approved License (see below)
+# Modifications made by [Nathan Vrieland/IronCAD], [2026]
+# See NOTICE or THIRD_PARTY_LICENSES in the project root for details.
+
 import os
 import sys
 from _ctypes import COMError
