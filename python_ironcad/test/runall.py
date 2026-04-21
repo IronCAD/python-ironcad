@@ -1,10 +1,11 @@
 from python_ironcad.test.initilize_api import test_attach_and_get_baseapp, test_get_old_automation_interface
-from python_ironcad.test.scenetests import test_create_new_scene
+from python_ironcad.test.scenetests import test_create_new_scene, test_add_profile
 
 TESTS = [
     ("Attach to IRONCAD and get BaseApp interface", test_attach_and_get_baseapp),
     ("Get old automation interface", test_get_old_automation_interface),
-    ("Create new scene", test_create_new_scene)
+    ("Create new scene", test_create_new_scene),
+    ("Add profile to scene", test_add_profile)
 ]
 
 def run_all_tests():

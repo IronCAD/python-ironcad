@@ -2,7 +2,6 @@ import python_ironcad
 from python_ironcad.test.test_utils import print_green_dot, print_fail, print_success
 
 def test_attach_and_get_baseapp():
-    print("\nRunning test: Attach to IRONCAD and get BaseApp interface\n")
     try:
         IRONCAD = python_ironcad.IronCAD()
         print("    Created IronCAD instance", end="")
@@ -30,7 +29,6 @@ def test_attach_and_get_baseapp():
         return False
 
 def test_get_old_automation_interface():
-    print("\nRunning test: Get old automation interface\n")
     try:
         IRONCAD = python_ironcad.IronCAD()
         print("    Created IronCAD instance", end="")
