@@ -1,6 +1,6 @@
 from python_ironcad import IronCAD
 import ctypes
-from test_utils import print_green_dot, print_fail, print_success
+from python_ironcad.test.test_utils import print_green_dot, print_fail, print_success
 
 def test_create_new_scene():
     print("\nRunning test: Create new scene\n")

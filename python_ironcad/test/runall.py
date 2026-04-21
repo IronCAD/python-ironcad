@@ -1,5 +1,5 @@
-from initilize_api import test_attach_and_get_baseapp, test_get_old_automation_interface
-from scenetests import test_create_new_scene
+from python_ironcad.test.initilize_api import test_attach_and_get_baseapp, test_get_old_automation_interface
+from python_ironcad.test.scenetests import test_create_new_scene
 
 TESTS = [
     ("Attach to IRONCAD and get BaseApp interface", test_attach_and_get_baseapp),

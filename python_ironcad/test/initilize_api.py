@@ -1,5 +1,5 @@
 import python_ironcad
-from test_utils import print_green_dot, print_fail, print_success
+from python_ironcad.test.test_utils import print_green_dot, print_fail, print_success
 
 def test_attach_and_get_baseapp():
     print("\nRunning test: Attach to IRONCAD and get BaseApp interface\n")
