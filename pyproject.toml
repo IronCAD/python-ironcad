@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0,<69"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "python-ironcad"
-version = "v0.1.8"
+version = "v0.1.9"
 description = "A Python module for IronCAD automation and scripting."
 authors = [
     { name = "Nathan Vrieland", email = "nvrieland@ironcad.com" }
