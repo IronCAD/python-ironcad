@@ -46,12 +46,12 @@ Please refer to [samples](https://github.com/IronCAD/python-ironcad/tree/main/sa
 # tips
 ### help() function to find member methods and data
 to inspect all members of a given object, use help(object)
-![help function](docs/images/help.png)
+![help function](https://github.com/IronCAD/python-ironcad/blob/main/docs/images/help.png?raw=true)
 
 ### intellisense in Visual Studio Code
 if you want to use intellisense to see object members, you can use python type hints. (this also works in pycharm)
 
-![Intellisense](docs/images/intellisense.png)
+![Intellisense](https://github.com/IronCAD/python-ironcad/blob/main/docs/images/intellisense.png?raw=true)
 
 # known issues
 - INOVATE is currently not supported 
