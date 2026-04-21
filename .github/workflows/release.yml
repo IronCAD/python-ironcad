@@ -42,7 +42,6 @@ jobs:
 
       - name: Publish to PyPI (Trusted Publisher)
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
           # No password needed for Trusted Publisher
           # Only publish if this is not a pre-release (optional, remove if you want to publish pre-releases)
         if: ${{ !contains(github.ref, '-rc') && !contains(github.ref, '-dev') }}

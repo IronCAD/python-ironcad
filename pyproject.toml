@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "python-ironcad"
-version = "v0.1.12"
+version = "v0.1.13"
 description = "A Python module for IronCAD automation and scripting."
 authors = [
     { name = "Nathan Vrieland", email = "nvrieland@ironcad.com" }
