@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "python-ironcad"
-version = "v0.1.14"
+version = "v0.1.15"
 description = "A Python module for IronCAD automation and scripting."
 authors = [
     { name = "Nathan Vrieland", email = "nvrieland@ironcad.com" }
@@ -12,9 +12,7 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    # "License :: OSI Approved :: MIT License",  # Removed per setuptools warning
-    "Operating System :: Windows"
+    "Programming Language :: Python :: 3"
 ]
 dependencies = [
     "comtypes==1.4.16"
