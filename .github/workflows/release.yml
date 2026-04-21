@@ -31,6 +31,14 @@ jobs:
         run: |
           python -m build
 
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@v1.8.11
         with:
@@ -39,10 +47,3 @@ jobs:
           TWINE_NON_INTERACTIVE: 1
         # Only publish if this is not a pre-release (optional, remove if you want to publish pre-releases)
         if: ${{ !contains(github.ref, '-rc') && !contains(github.ref, '-dev') }}
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: dist/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
