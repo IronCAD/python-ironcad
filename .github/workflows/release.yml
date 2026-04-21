@@ -40,11 +40,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
-      - name: Publish to PyPI
-        uses: pypa/gh-action-pypi-publish@v1.8.11
+      - name: Publish to PyPI (Trusted Publisher)
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.PYPI_API_TOKEN }}
-        env:
-          TWINE_NON_INTERACTIVE: 1
-        # Only publish if this is not a pre-release (optional, remove if you want to publish pre-releases)
+          # No password needed for Trusted Publisher
+          # Only publish if this is not a pre-release (optional, remove if you want to publish pre-releases)
         if: ${{ !contains(github.ref, '-rc') && !contains(github.ref, '-dev') }}
