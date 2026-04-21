@@ -3,7 +3,7 @@ import time
 
 def print_green_dot():
     # ANSI escape code for green
-    print("  \033[92m.\033[0m", end="", flush=True)
+    print("  \033[92m>>>\033[0m", flush=True)
 
 def print_fail(msg):
     # ANSI escape code for red
