@@ -87,4 +87,9 @@ Make sure to run the command prompt as administrator when registering the COM co
     def GetOldAutomationInterface(self):
         return self.get_ironcadapp()
 
+    def QueryMemoryAddress(self, ptr, interface = comtypes.IUnknown):
+        try:
+            return comtypes.POINTER(interface).from_address(ptr)
+        except Exception as e:
+            return None
 

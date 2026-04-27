@@ -90,3 +90,6 @@ venv/
 
 # Wheel files
 *.whl
+
+# local test files
+*test.py
